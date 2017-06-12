@@ -7,7 +7,7 @@ import { setDocumentTitle } from '../../utils';
 
 class GameErrorView extends React.Component {
   componentDidMount() {
-    setDocumentTitle('Blow me down, game error!');
+    setDocumentTitle('Whoops, game error!');
   }
 
   render() {
@@ -16,8 +16,8 @@ class GameErrorView extends React.Component {
     return (
       <div id="not_found" className="view-container">
         <Logo/>
-        <h1>Blow me down, game error!</h1>
-        <NewGameButton lobbyChannel={lobbyChannel} dispatch={dispatch}>Start new battle, arr!</NewGameButton>
+        <h1>Whoops, game error!</h1>
+        <NewGameButton lobbyChannel={lobbyChannel} dispatch={dispatch}>Start hacking!</NewGameButton>
         <p><Link to="/">Back to home</Link></p>
       </div>
     );

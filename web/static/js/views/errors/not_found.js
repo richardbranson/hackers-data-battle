@@ -16,8 +16,8 @@ class NotFoundView extends React.Component {
     return (
       <div id="not_found" className="view-container">
         <Logo/>
-        <h1>Yo Ho Ho, game not found!</h1>
-        <NewGameButton lobbyChannel={lobbyChannel} dispatch={dispatch}>Start new battle, arr!</NewGameButton>
+        <h1>Whoops, game not found!</h1>
+        <NewGameButton lobbyChannel={lobbyChannel} dispatch={dispatch}>Start hacking!</NewGameButton>
         <p><Link to="/">Back to home</Link></p>
       </div>
     );

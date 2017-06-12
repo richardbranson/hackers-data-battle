@@ -13,7 +13,7 @@ export default class Header extends React.Component {
     const { my_board, opponents_board, readyForBattle } = game;
 
     if (!my_board.ready) {
-      return 'Place your ships';
+      return 'Secure your stuff!!';
     } else if (!opponents_board || !opponents_board.ready) {
       return 'Waiting for opponent';
     } else if (currentTurn && currentTurn === playerId) {
@@ -30,7 +30,7 @@ export default class Header extends React.Component {
     const { my_board, opponents_board, readyForBattle } = game;
 
     if (!my_board.ready) {
-      return 'Use the instructions below';
+      return 'Use the instructions below to hide your DATA; DOCUMENTS; DEVICE & IDENTITY';
     } else if (!opponents_board || !opponents_board.ready) {
       return 'Battle will start as soon as your opponent is ready';
     } else if (currentTurn && currentTurn === playerId) {

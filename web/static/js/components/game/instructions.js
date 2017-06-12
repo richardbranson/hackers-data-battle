@@ -24,16 +24,16 @@ export default class Instructions extends React.Component {
     return (
       <div id="opponents_board_container">
         <header>
-          <h2>Instructions</h2>
+          <h2>How to secure your stuff</h2>
         </header>
         <ol className="instructions">
           {::this._renderGameURL(playerIsAttacker)}
-          <li>To place a ship in your board select one by clicking on the gray boxes.</li>
-          <li>The selected ship will turn green.</li>
-          <li>Switch the orientation of the ship by clicking again on it.</li>
-          <li>To place the selected ship click on the cell where you want it to start.</li>
-          <li>Repeat the process until you place all your ships.</li>
-          <li>Tha battle will start as soon as both players have placed all their ships.</li>
+          <li>To place an item on your board select one by clicking on the gray boxes.</li>
+          <li>The selected item will turn green.</li>
+          <li>Switch the orientation of the item by clicking again on it.</li>
+          <li>To place the selected item click on the cell where you want it to start.</li>
+          <li>Repeat the process until you place all your items.</li>
+          <li>Tha battle will start as soon as both players have placed all their items.</li>
           <li>Good luck!</li>
         </ol>
       </div>

@@ -11,7 +11,7 @@ class HomeIndexView extends React.Component {
   componentDidMount() {
     const { dispatch, lobbyChannel } = this.props;
 
-    setDocumentTitle('Ahoy, Matey!');
+    setDocumentTitle('Stay Secure with HP');
     dispatch(fetchGames(lobbyChannel));
   }
 
@@ -50,14 +50,12 @@ class HomeIndexView extends React.Component {
       <div id="home_index" className="view-container">
         <header>
           <Logo/>
-          <h1>Ahoy Matey, <br/>welcome to Phoenix Battleship!</h1>
-          <p>The <a target="_blank" href="https://en.wikipedia.org/wiki/Battleship_(game)">Good Old game</a>, built with <a target="_blank" href="http://elixir-lang.org/">Elixir</a>, <a target="_blank" href="http://www.phoenixframework.org/">Phoenix</a>, <a target="_blank" href="http://facebook.github.io/react/">React</a> and <a target="_blank" href="http://redux.js.org/">Redux</a></p>
-          <NewGameButton lobbyChannel={lobbyChannel} dispatch={dispatch}>Start new battle, arr!</NewGameButton>
+          <h1>Stay secure with HP, <br/>do battle to try and destroy your opponents stuff!</h1>
+          <NewGameButton lobbyChannel={lobbyChannel} dispatch={dispatch}>Start hacking</NewGameButton>
         </header>
         {::this._renderCurrentGames()}
         <footer>
-          <p>crafted with ♥ by <a target="_blank" href="http://codeloveandboards.com/">@bigardone</a></p>
-          <p><a target="_blank" href="https://github.com/bigardone/phoenix-battleship"><i className="fa fa-github"/> source code</a></p>
+          
         </footer>
       </div>
     );

@@ -80,8 +80,8 @@ class GameShowView extends React.Component {
   _renderResult() {
     const { game, playerId, winnerId } = this.props;
 
-    const message = playerId === winnerId ?  'Yo Ho Ho, victory is yours!' : 'You got wrecked, landlubber!';
-    const twitterMessage = playerId === winnerId ?  'Yo Ho Ho, I won a battle at Phoenix Battleship' : 'I got wrecked at Phoenix Battleship';
+    const message = playerId === winnerId ?  'HP had your back and kept your stuff safe!' : 'Time to switch to HP to keep your stuff safe!';
+    const twitterMessage = playerId === winnerId ?  'HP had your back and kept your stuff safe!' : 'Time to switch to HP to keep your stuff safe!';
 
     setDocumentTitle(`${message} · #${game.id}`);
 
@@ -114,7 +114,7 @@ class GameShowView extends React.Component {
         <section id="boards_container">
           <div id="my_board_container">
             <header>
-              <h2>Your ships</h2>
+              <h2>Your data stuff</h2>
             </header>
             <ShipSelector
               dispatch={dispatch}
